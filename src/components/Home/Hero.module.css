@@ -90,16 +90,16 @@ Media Queries
 }
 @media screen and (max-width:876px) { 
     .heroSectionImage {
-        z-index: 5;
+        z-index: 3;
     }
     .heroSectionText h1 {
-        z-index: 10;
+        z-index: 4;
     }
     .heroSectionText p {
-        z-index: 10;
+        z-index: 4;
     }
     .heroSectionText h1 {
-        z-index: 10;
+        z-index: 4;
     }
 }
 @media screen and (max-width:780px) { 
@@ -180,10 +180,11 @@ Media Queries
         height: 275px;
     }
 }
-@media screen and (max-width:555px) { 
+@media screen and (max-width:568px) { 
 
     .heroSectionImage {
         max-width: 325px;
+        z-index: 0;
     }
 }
 @media screen and (max-width:537px) { 
