@@ -229,19 +229,37 @@ Media Queries
         right: -80px;
     } 
     .heroSectionText h1 {
-        font-size: 2.2rem;
+        font-size: 3.6rem;
     }
     .heroSectionText p {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .heroSectionText h1 span{
-        font-size: 2.2rem;
+        font-size: 3.6rem;
+    }
+}
+@media screen and (max-width:400px) { 
+
+    .heroSectionImage {
+        max-width: 250px;
+        top: 140px;
+        right: -80px;
+    } 
+    .heroSectionText h1 {
+        font-size: 3.6rem;
+    }
+    .heroSectionText p {
+        font-size: 1.4rem;
+        max-width: 70%;
+    }
+    .heroSectionText h1 span{
+        font-size: 3.6rem;
     }
 }
 @media screen and (max-width:380px) { 
 
     .heroSectionImage {
-        max-width: 200px;
+        max-width: 225px;
     } 
 
 }
