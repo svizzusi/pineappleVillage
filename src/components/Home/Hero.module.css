@@ -113,7 +113,7 @@ Media Queries
         top: 60px;
     }
     .heroContainer {
-        height: 400px;
+        height: fit-content;
     }
 }
 @media screen and (max-width:716px) { 
@@ -126,9 +126,6 @@ Media Queries
         max-width: 450px;
         top: 70px;
     }
-    .heroContainer {
-        height: 350px;
-    }
 }
 @media screen and (max-width:684px) { 
 
@@ -138,9 +135,6 @@ Media Queries
 
     .heroSectionImage {
         max-width: 400px;
-    }
-    .heroContainer {
-        height: 300px;
     }
 }
 @media screen and (max-width:649px) { 
@@ -162,9 +156,6 @@ Media Queries
     .heroSectionImage {
         top: 90px;
     }
-    .heroContainer {
-        height: 300px;
-    }
 }
 @media screen and (max-width:605px) { 
 
@@ -175,9 +166,6 @@ Media Queries
     .heroSectionImage {
         max-width: 350px;
         top: 100px;
-    }
-    .heroContainer {
-        height: 275px;
     }
 }
 @media screen and (max-width:568px) { 
