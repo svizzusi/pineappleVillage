@@ -8,6 +8,7 @@
     align-items: center;
     height: 70px;
     max-width: var(--maxWidth);
+    padding: var(--padding);
     margin: auto;
 }
 
@@ -25,11 +26,16 @@
 
 .navLink {
     color: var(--black);
+    text-align: center;
 }
 
 .navLink:hover {
-    color: var(--maroon);
+    color: var(--orange);
     transition: .3s ease-in-out;
+}
+
+.navLink .active {
+  color: var(--orange);
 }
 
 .col {
@@ -47,21 +53,24 @@ Media Queries
 .navLinks {
     display: none;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 20px 20px;
     position: absolute;
     right: 20px;
     top: 70px;
     background: var(--beige);
     border-radius: 0 0 8px 8px;
     z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.navLinks {
+    gap: 30px;
 }
 
 .expanded {
     display: flex;
 }    
 .three{
-    width: 23.8%;
-    padding: 80px 30px;
+    width: fit-content;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

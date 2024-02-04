@@ -1,10 +1,9 @@
-import {Link, useNavigate} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import style from './NavBar.module.css'
 import {useState} from 'react'
 import logo from '../../assets/logo.webp'
 
 const NavBar = () => {
-    const navigate = useNavigate()
 
     const [navExpanded, setNavExpanded] = useState(false)
 
@@ -12,6 +11,13 @@ const NavBar = () => {
         setNavExpanded(!navExpanded)
     }
     const closeNav = () => setNavExpanded(false)
+
+    const activeNow = ({isActive}) => {
+        return {
+            color: isActive ? 'var(--orange)' : 'inherit',
+            textDecoration: isActive ? 'underline' : 'inherit'
+        }
+    }
 
   return (
     <header className={style.header}>
@@ -25,53 +31,53 @@ const NavBar = () => {
                     />
                 </Link>
             </div>
-            <ul 
+            <div 
                 className={navExpanded ? `${style.navLinks} ${style.expanded}` : style.navLinks}
                 >
-                    <li>
-                        <span 
-                            className={style.navLink} 
-                            onClick={() => { 
-                                closeNav()
-                                navigate('/') 
-                            }}
-                        >Home</span>
-                    </li>
-                    <li>
-                        <span 
-                            className={style.navLink} 
-                            onClick={() => { 
-                                closeNav()
-                                navigate('/menu') 
-                            }}
-                        >Menu</span>
-                    </li>
-                    <li>
-                        <span 
-                            className={style.navLink}
-                            onClick={() => { 
-                                closeNav()
-                                navigate('/about')
-                            }}
-                        >About</span>
-                    </li>
-                    <li>
-                        <span
-                            className={style.navLink} 
-                            onClick={() => { 
-                                closeNav()
-                                navigate('/contact')
-                            }}
-                        >Contact</span>
-                    </li>
-                </ul>
-                <div className={`${style.three} ${style.col}`}>
-                    <div onClick={openNav} className={`${style.hamburger} ${style.burger} ${navExpanded? style.isActive : ''}`}>
-                        <span className={style.line}></span>
-                        <span className={style.line}></span>
-                        <span className={style.line}></span>
-                    </div>
+                <NavLink 
+                    className={style.navLink}
+                    style={activeNow} 
+                    to='/'
+                    onClick={() => { 
+                        closeNav()
+                    }}
+                    >Home
+                </NavLink>
+                <NavLink 
+                    className={style.navLink} 
+                    style={activeNow}
+                    to='/menu'
+                    onClick={() => { 
+                        closeNav()
+                    }}
+                    >Menu
+                </NavLink>
+                <NavLink
+                    className={style.navLink}
+                    style={activeNow}
+                    to='/about'
+                    onClick={() => { 
+                        closeNav()
+                    }}
+                    >About
+                </NavLink>
+                <NavLink
+                    className={style.navLink}
+                    style={activeNow} 
+                    to='/contact'
+                    onClick={() => { 
+                        closeNav()
+                    }}
+                    >Contact
+                </NavLink>
+            </div>
+            <div className={`${style.three} ${style.col}`}>
+                <div onClick={openNav} className={`${style.hamburger} ${style.burger} ${navExpanded? style.isActive : ''}`}>
+                    <span className={style.line}></span>
+                    <span className={style.line}></span>
+                    <span className={style.line}></span>
                 </div>
+            </div>
         </nav>
     </header>
   )

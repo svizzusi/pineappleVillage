@@ -1,0 +1,246 @@
+.heroSection {
+    padding: var(--padding);
+    background: var(--beige);
+}
+
+.heroContainer {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    max-width: var(--maxWidth);
+}
+
+.heroSectionText {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heroSectionTextIconContainer {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.heroSectionTextIcon {
+    color: var(--orange);
+    font-size: 2.2rem;
+}
+
+.heroSectionSpan {
+    font-size: 4.6rem;
+    color: var(--orange);
+}
+
+.heroSectionButton {
+    width: 100px;
+    background: var(--green);
+    color: var(--darkGreen);
+    border: 1px solid var(--darkGreen);
+    border-radius: var(--borderRadius);
+    padding: 6px 12px;
+    margin-top: 30px;
+}
+
+.heroSectionButton:hover {
+    background: var(--darkGreen);
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+.heroSectionImage {
+    width: 100%;
+    max-width: 600px;
+}
+
+.heroswiperSection {
+    /* max-width: var(--maxWidth); */
+    height: 500px;
+    background: var(--white);
+    margin: auto;
+}
+
+/* ****************************************************************
+/* ****************************************************************
+Media Queries
+*****************************************************************
+*****************************************************************/
+@media screen and (max-width:1044px) { 
+    .heroContainer {
+        display: block;
+        overflow: hidden;
+    }
+    .heroSectionText {
+        margin-top: 150px;
+    }
+
+    .heroSectionImage {
+        max-width: 700px;
+        position: absolute;
+        top: 80px;
+        right: -80px;
+    } 
+}
+@media screen and (max-width:922px) { 
+    .heroSectionImage {
+        max-width: 600px;
+    }
+}
+@media screen and (max-width:876px) { 
+    .heroSectionImage {
+        z-index: 5;
+    }
+    .heroSectionText h1 {
+        z-index: 10;
+    }
+    .heroSectionText p {
+        z-index: 10;
+    }
+    .heroSectionText h1 {
+        z-index: 10;
+    }
+}
+@media screen and (max-width:780px) { 
+
+    .heroSectionText {
+        margin-top: 100px;
+    }
+
+    .heroSectionImage {
+        max-width: 500px;
+        top: 60px;
+    }
+    .heroContainer {
+        height: 400px;
+    }
+}
+@media screen and (max-width:716px) { 
+
+    .heroSectionText {
+        margin-top: 100px;
+    }
+
+    .heroSectionImage {
+        max-width: 450px;
+        top: 70px;
+    }
+    .heroContainer {
+        height: 350px;
+    }
+}
+@media screen and (max-width:684px) { 
+
+    .heroSectionText {
+        margin-top: 80px;
+    }
+
+    .heroSectionImage {
+        max-width: 400px;
+    }
+    .heroContainer {
+        height: 300px;
+    }
+}
+@media screen and (max-width:649px) { 
+
+    .heroSectionText {
+        margin-top: 70px;
+    }
+
+    .heroSectionImage {
+        top: 70px;
+    }
+}
+@media screen and (max-width:611px) { 
+
+    .heroSectionText {
+        margin-top: 60px;
+    }
+
+    .heroSectionImage {
+        top: 90px;
+    }
+    .heroContainer {
+        height: 300px;
+    }
+}
+@media screen and (max-width:605px) { 
+
+    .heroSectionText {
+        margin-top: 50px;
+    }
+
+    .heroSectionImage {
+        max-width: 350px;
+        top: 100px;
+    }
+    .heroContainer {
+        height: 275px;
+    }
+}
+@media screen and (max-width:555px) { 
+
+    .heroSectionImage {
+        max-width: 325px;
+    }
+}
+@media screen and (max-width:537px) { 
+
+    .heroSectionText {
+        margin-top: 45px;
+    }
+
+    .heroSectionImage {
+        max-width: 300px;
+        top: 120px;
+    }
+}
+@media screen and (max-width:508px) { 
+
+    .heroSectionText {
+        margin-top: 40px;
+    }
+
+    .heroSectionImage {
+        max-width: 275px;
+        top: 130px;
+    }
+}
+@media screen and (max-width:489px) { 
+
+    .heroSectionText {
+        margin-top: 40px;
+    }
+
+    .heroSectionImage {
+        max-width: 275px;
+        top: 130px;
+        right: -100px;
+    } 
+}
+@media screen and (max-width:446px) { 
+
+    .heroSectionImage {
+        max-width: 250px;
+        top: 140px;
+        right: -80px;
+    } 
+    .heroSectionText h1 {
+        font-size: 2.2rem;
+    }
+    .heroSectionText p {
+        font-size: 1rem;
+    }
+    .heroSectionText h1 span{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:380px) { 
+
+    .heroSectionImage {
+        max-width: 200px;
+    } 
+
+}

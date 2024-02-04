@@ -1,0 +1,39 @@
+.header {
+    background: var( --beige);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    max-width: var(--maxWidth);
+    padding: var(--padding);
+    margin: auto;
+}
+
+.navLogo {
+    width: 100%;
+    max-width: 150px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.navLink {
+    color: var(--black);
+    text-align: center;
+}
+
+.navLink:hover {
+    color: var(--orange);
+    transition: .3s ease-in-out;
+}
+
+.navLink .active {
+  color: var(--orange);
+}

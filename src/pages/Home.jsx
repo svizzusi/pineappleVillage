@@ -1,7 +1,9 @@
+import Hero from "../components/Home/Hero";
+
 const Home = () => {
   return (
     <>
-      <h1> Pineapple Village</h1>
+      <Hero />
     </>
   )
 };

@@ -1,11 +1,14 @@
 :root {
     --white: #FEFBE7;
     --maroon: #401915;
-    --beige: #e7e0d7;
+    --orange: #d7633d;
+    --green: #b1be96;
+    --darkGreen: #1E302F;
+    --beige: #f9e6cd;
     --black: #070707;
     --maxWidth: 1200px;
     --links: 2.2rem;
-    --padding: 0 20px;
+    --padding: 0 50px;
     --borderRadius: 40px;
   }
   
@@ -21,7 +24,7 @@
   }
   
   body {
-    background: var(--white);
+    /* background: var(--beige); */
   }
 
   h1 {
