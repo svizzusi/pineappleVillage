@@ -17,7 +17,7 @@ useEffect(() => {
           spaceBetween={10}
           slidesPerView={1}
           breakpoints={{
-            400: {
+            350: {
               slidesPerView: 1.5,
               spaceBetween: 20,
             },
