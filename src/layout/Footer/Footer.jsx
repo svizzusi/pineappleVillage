@@ -1,7 +1,7 @@
-import {Link, NavLink} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import style from './Footer.module.css'
 import {useState} from 'react'
-import logo from '../../assets/logo.webp'
+import Logo from "../../components/Logo/Logo";
 
 const Footer = () => {
 
@@ -22,15 +22,7 @@ const Footer = () => {
   return (
     <header className={style.header}>
         <nav className={style.nav}>
-            <div className={style.navLogo}>
-                <Link 
-                    to={'/'}>
-                    <img 
-                        src={logo} 
-                        alt={logo} 
-                    />
-                </Link>
-            </div>
+            <Logo />
             <div 
                 className={navExpanded ? `${style.navLinks} ${style.expanded}` : style.navLinks}
                 >

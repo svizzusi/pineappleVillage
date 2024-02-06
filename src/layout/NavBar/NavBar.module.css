@@ -12,11 +12,6 @@
     margin: auto;
 }
 
-.navLogo {
-    width: 100%;
-    max-width: 150px;
-}
-
 .navLinks {
     display: flex;
     gap: 20px;

@@ -1,6 +1,6 @@
 import style from './Hero.module.css'
 import {useNavigate} from 'react-router-dom'
-import thaiDish from '../../assets/thaiDish.webp'
+import thaiDish from '../../assets/images/thaiDish.webp'
 import { SlLocationPin } from "react-icons/sl";
 
 const Hero = () => {
