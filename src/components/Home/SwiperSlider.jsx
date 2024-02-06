@@ -1,23 +1,67 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import thaiDish1 from '../../assets/images/thaiDish1.jpeg'
+import {useEffect} from 'react'
+import Data from './Data.jsx';
+
 
 const SwiperSlider = () => {
+
+useEffect(() => {
+  console.log(Data)
+}, []);
+
   return (
-    <div className={'max-w-72 rounded background-color: rgb(3 7 18);'}>
-      <div className={'h-56'}>
-        <img src={thaiDish1} alt='thaiDish1'/>
-      </div>
-      <section className={'h-56 flex-col gap-2 px-4'}>
-        <div className={'justify-between content-center border-b-neutral-600'}>
-          <h2 className={'text-2xl'}>PadThai</h2>
-          <span className={'text-lg color: var(--orange)'}>$12.00</span>
-        </div>
-        <div>
-          <p className={'text-lg'}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet, consequatur iure amet</p>
-        </div>
+    <section className={'px-20'}>
+      <section className={'max-w-[var(--maxWidth)] m-auto'}>
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          breakpoints={{
+            400: {
+              slidesPerView: 1.5,
+              spaceBetween: 20,
+            },
+            520: {
+              slidesPerView: 2.5,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4.5,
+              spaceBetween: 50,
+            },
+          }}
+        >
+          {
+            Data.map((data,index) => (
+            <SwiperSlide key={index}>
+              <div className={'max-w-72 rounded-3xl overflow-hidden bg-white'}>
+                <div className={'h-56'}>
+                  <img src={data.source} alt={data.alt}/>
+                </div>
+                <section className={'h-56 flex-col gap-2 px-4'}>
+                  <div className={' flex justify-between content-center py-3.5 border-b border-b-neutral-200'}>
+                    <h2 className={'font-medium text-xl'}>{data.heading}</h2>
+                    <span className={'text-lg font-medium text-[var(--orange)]'}>${data.price}</span>
+                  </div>
+                  <div>
+                    <p className={'text-base py-3'}>{data.description}</p>
+                  </div>
+                </section>
+              </div>
+            </SwiperSlide>
+          ))
+          }
+        </Swiper>
       </section>
-    </div>
+    </section>
   )
 };
 

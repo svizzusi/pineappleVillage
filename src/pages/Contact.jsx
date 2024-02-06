@@ -1,7 +1,9 @@
+import ContactSection from "../components/Contact/ContactSection";
+
 const Contact = () => {
   return (
     <>
-        <h1>Contact Us</h1>
+        <ContactSection />
     </>
   )
 };
