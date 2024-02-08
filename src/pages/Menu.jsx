@@ -1,7 +1,9 @@
+import MenuSection from '../components/Menu/MenuSection'
+
 const Menu = () => {
   return (
     <>
-      <h1>Menu</h1>
+      <MenuSection />
     </>
   )
 };

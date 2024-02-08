@@ -37,7 +37,7 @@
 .heroSectionButton {
     width: 100px;
     background: var(--green);
-    color: var(--darkGreen);
+    color: var(--white);
     font-size: 1.4rem;
     border: 1px solid var(--darkGreen);
     border-radius: var(--borderRadius);
@@ -47,7 +47,7 @@
 
 .heroSectionButton:hover {
     background: var(--darkGreen);
-    color: var(--green);
+    color: var(--white);
     border: 1px solid var(--green);
 }
 
@@ -57,7 +57,6 @@
 }
 
 .heroswiperSection {
-    /* max-width: var(--maxWidth); */
     height: 500px;
     background: var(--white);
     margin: auto;
@@ -115,6 +114,7 @@ Media Queries
     }
     .heroContainer {
         height: fit-content;
+        padding-bottom: 50px;
     }
 }
 @media screen and (max-width:716px) { 

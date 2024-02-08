@@ -1,39 +1,85 @@
-.header {
-    background: var( --beige);
+.footerContainer {
+    width: 100%;
+    background: var(--beige);
+    position: static;
+    bottom: 0;
+    z-index: 1;
+    padding: 80px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: fit-content;
+    /* border-top: 5px solid var(--orange); */
 }
 
-.nav {
+.footer {
+    max-width: var(--maxWidth);
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
-    max-width: var(--maxWidth);
     padding: var(--padding);
-    margin: auto;
 }
 
-.navLogo {
-    width: 100%;
-    max-width: 150px;
-}
-
-.navLinks {
+.footerAddress {
     display: flex;
     gap: 20px;
+}
+
+.footerAddress a {
     cursor: pointer;
-    list-style: none;
-}
-
-.navLink {
-    color: var(--black);
-    text-align: center;
-}
-
-.navLink:hover {
+    text-decoration: none;
+    font-size: 1.8rem;
     color: var(--orange);
+}
+
+.footerAddress a:hover {
+    color: var(--green);
     transition: .3s ease-in-out;
 }
 
-.navLink .active {
-  color: var(--orange);
+.footerHours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange);
+    font-size: 1rem;
+}
+
+.footerSocials {
+    display: flex;
+    gap: 20px;
+}
+
+.footerSocialLink {
+    cursor: pointer;
+    font-size: 3.8rem;
+    color: var(--orange);
+}
+
+.footerSocialLink:hover {
+    color: var(--green);
+    transition: .3s ease-in-out;
+}
+
+@media  screen and (max-width: 835px) {
+    .footer {
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footerLogo {
+        font-size: 2.6rem;
+    }
+
+    .footerAddress a {
+        font-size: 1.4rem; 
+    }
+
+    .footerSocialLink {
+        font-size: 1.4rem;
+    }
 }

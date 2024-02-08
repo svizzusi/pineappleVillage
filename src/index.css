@@ -6,10 +6,10 @@
 :root {
     --white: #FEFBE7;
     --maroon: #401915;
-    --orange: #d7633d;
-    --green: #b1be96;
-    --darkGreen: #1E302F;
-    --beige: #f9e6cd;
+    --orange: #F97B22;
+    --green: #9CA777;
+    --darkGreen: #7C9070;
+    --beige: #FEE8B0;
     --black: #070707;
     --maxWidth: 1200px;
     --links: 2.2rem;
@@ -30,6 +30,7 @@
   
   body {
     background: rgba(249, 230, 205, 0.3);
+    overflow-x: hidden;
   }
 
   h1 {

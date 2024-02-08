@@ -11,8 +11,10 @@ useEffect(() => {
 }, []);
 
   return (
-    <section className={'px-20'}>
+    <section className={'px-20 pb-20'}>
       <section className={'max-w-[var(--maxWidth)] m-auto'}>
+        <h2 className={'text-5xl font-medium pt-10'}>Our <span className={'text-5xl font-medium text-[var(--orange)] py-3.5'}>Specials</span></h2>
+        <p className={'text-xl pt-4 pb-8'} >Here are our bestsellers, give them a taste!</p>
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
@@ -26,15 +28,19 @@ useEffect(() => {
               spaceBetween: 20,
             },
             640: {
-              slidesPerView: 3,
+              slidesPerView: 3.5,
               spaceBetween: 20,
             },
             768: {
               slidesPerView: 4,
               spaceBetween: 40,
             },
-            1024: {
+            980: {
               slidesPerView: 4.5,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5.5,
               spaceBetween: 50,
             },
           }}
@@ -46,7 +52,7 @@ useEffect(() => {
                 <div className={'h-56'}>
                   <img src={data.source} alt={data.alt}/>
                 </div>
-                <section className={'h-56 flex-col gap-2 px-4'}>
+                <section className={'h-fit flex-col gap-2 px-4'}>
                   <div className={' flex justify-between content-center py-3.5 border-b border-b-neutral-200'}>
                     <h2 className={'font-medium text-xl'}>{data.heading}</h2>
                     <span className={'text-lg font-medium text-[var(--orange)]'}>${data.price}</span>

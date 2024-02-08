@@ -1,77 +1,32 @@
-import {NavLink} from "react-router-dom"
 import style from './Footer.module.css'
-import {useState} from 'react'
-import Logo from "../../components/Logo/Logo";
+import { BsYelp } from 'react-icons/bs';
+import Logo from '../../components/Logo/Logo'
 
 const Footer = () => {
-
-    const [navExpanded, setNavExpanded] = useState(false)
-
-    const openNav = () => {
-        setNavExpanded(!navExpanded)
-    }
-    const closeNav = () => setNavExpanded(false)
-
-    const activeNow = ({isActive}) => {
-        return {
-            color: isActive ? 'var(--orange)' : 'inherit',
-            textDecoration: isActive ? 'underline' : 'inherit'
-        }
-    }
-
   return (
-    <header className={style.header}>
-        <nav className={style.nav}>
-            <Logo />
-            <div 
-                className={navExpanded ? `${style.navLinks} ${style.expanded}` : style.navLinks}
-                >
-                <NavLink 
-                    className={style.navLink}
-                    style={activeNow} 
-                    to='/'
-                    onClick={() => { 
-                        closeNav()
-                    }}
-                    >Home
-                </NavLink>
-                <NavLink 
-                    className={style.navLink} 
-                    style={activeNow}
-                    to='/menu'
-                    onClick={() => { 
-                        closeNav()
-                    }}
-                    >Menu
-                </NavLink>
-                <NavLink
-                    className={style.navLink}
-                    style={activeNow}
-                    to='/about'
-                    onClick={() => { 
-                        closeNav()
-                    }}
-                    >About
-                </NavLink>
-                <NavLink
-                    className={style.navLink}
-                    style={activeNow} 
-                    to='/contact'
-                    onClick={() => { 
-                        closeNav()
-                    }}
-                    >Contact
-                </NavLink>
-            </div>
-            <div className={`${style.three} ${style.col}`}>
-                <div onClick={openNav} className={`${style.hamburger} ${style.burger} ${navExpanded? style.isActive : ''}`}>
-                    <span className={style.line}></span>
-                    <span className={style.line}></span>
-                    <span className={style.line}></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div className={style.footerContainer}>
+      <footer className={style.footer}>
+        <Logo />  
+        <div className={style.footerAddress}>
+          <a 
+            href='https://www.google.com/maps/place/Pineapple+Village/@37.0143715,-121.5947399,15z/data=!3m1!4b1!4m6!3m5!1s0x8091e3ccdede4863:0x28dbef3863509773!8m2!3d37.0143719!4d-121.5844402!16s%2Fg%2F1q629rgnj?entry=ttu' 
+            target="_blank">
+            769 1st St Gilroy, CA 95020
+          </a>
+        </div>
+        <div className={style.footerHours}>
+          <span>Sun - Thursday 11:00 AM - 9:30 PM</span>
+          <span>Fri - Sat 11:00 AM - 10:00 PM</span>
+        </div>
+        <div>
+          <a 
+            href='https://www.yelp.com/biz/pineapple-village-gilroy' 
+            target="_blank">
+              <BsYelp className={style.footerSocialLink}/>
+          </a>
+        </div>
+      </footer>
+    </div>
   )
 };
 

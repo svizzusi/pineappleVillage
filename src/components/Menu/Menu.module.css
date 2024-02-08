@@ -1,0 +1,123 @@
+.menuSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--beige);
+    padding-top: 30px;
+}
+
+.menuSectionHeading {
+    color: var(--orange);
+    padding: 20px;
+}
+
+.menuSectionSubHeading {
+    color: var(--orange);
+    text-align: center;
+    padding: 20px;
+}
+
+.menuSectionTextContainerParent {
+    width: 100%;
+    background: var(--green);
+    border-top: 5px solid var(--darkGreen);
+}
+
+.menuSectionTextContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+    max-width: var(--maxWidth);
+}
+
+.menuSectionCard {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--darkGreen);
+    border-radius: 8px;
+    padding: 20px;
+    width: 50%;
+    background: var(--white);
+    height: fit-content;
+    margin: 100px 0;
+}   
+
+.menuSectionItemContainer {
+    border: 2px solid var(--darkGreen);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.menuSectionCard h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.menuItemContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.menuItemContainer > span:first-child{
+    width: 80%;
+}
+
+.menuItemContainer span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.menuItemDescriptionContainer {
+    padding-bottom: 10px;
+}
+
+.menuItemDescriptionContainer p {
+    font-size: 1.2rem
+}
+
+.menuItemALaCarte {
+    font-size: 1.4rem;
+}
+
+
+@media screen and (max-width: 925px) {
+    .menuSectionTextContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuSectionCard {
+        gap: 20px;
+        width: 100%;
+        margin: 0;
+    }  
+}
+
+@media screen and (max-width: 425px) {
+
+    .menuSectionSubHeading {
+        font-size: 2rem;
+    }
+
+    .menuItemDescriptionContainer p {
+        font-size: 1rem
+    }
+
+    .menuItemContainer span{
+        font-size: 1.2rem;
+    }
+
+    .menuSectionCard h3 {
+        font-size: 1rem;
+    }
+}
