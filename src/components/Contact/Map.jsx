@@ -5,7 +5,7 @@ const Map = () => {
 
   return ( 
       <div className={style.mapContainer}>
-        <iframe src="https://www.google.com/maps/place/Pineapple+Village/@37.0143715,-121.5947399,15z/data=!3m1!4b1!4m6!3m5!1s0x8091e3ccdede4863:0x28dbef3863509773!8m2!3d37.0143719!4d-121.5844402!16s%2Fg%2F1q629rgnj?entry=ttu" width="100%" height="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3185.8081961878065!2d-121.5844402!3d37.0143719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8091e3ccdede4863%3A0x28dbef3863509773!2sPineapple%20Village!5e0!3m2!1sen!2sus!4v1707424391393!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
   )
 };
