@@ -9,7 +9,7 @@ const ContactSection = () => {
       <div className={style.contactSectionHeader}>
         <h1>Location and Hours</h1>
         <p>769 1st St Gilroy, CA 95020</p>
-        <p><AiOutlinePhone/> (408) 842-2888</p>
+        <p><span><AiOutlinePhone/></span> <span>(408) 842-2888</span></p>
       </div>
       <section className={style.contactHoursMapSection}>
         <Map />
