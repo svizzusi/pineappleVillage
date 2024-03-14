@@ -3,8 +3,8 @@ import style from './Menu.module.css';
 const Menu = () => {
   return (
     <section className={style.menuSection}>
-      <h1 className={style.menuSectionHeading}>Menu</h1>
       <section className={style.menuSectionTextContainerParent}>
+        <h1 className={style.menuSectionHeading}>Menu</h1>
         <div className={style.menuSectionTextContainer}>
           <section className={style.menuSectionCard}>
             <div className={style.menuSectionItemContainer}>

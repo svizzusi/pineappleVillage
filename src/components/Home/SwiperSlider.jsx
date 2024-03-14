@@ -11,10 +11,10 @@ useEffect(() => {
 }, []);
 
   return (
-    <section className={'px-20 pb-20'}>
-      <section className={'max-w-[var(--maxWidth)] m-auto'}>
+    <section className={'px-20 pb-20 bg-black'}>
+      <section className={'max-w-[var(--maxWidth)] m-auto text-[var(--white)]'}>
         <h2 className={'text-5xl font-medium pt-10'}>Our <span className={'text-5xl font-medium text-[var(--orange)] py-3.5'}>Specials</span></h2>
-        <p className={'text-xl pt-4 pb-8'} >Here are our bestsellers, give them a taste!</p>
+        <p className={'text-xl pt-4 pb-8 text-[var(--white)]'} >Here are our bestsellers, give them a taste!</p>
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
@@ -48,7 +48,7 @@ useEffect(() => {
           {
             Data.map((data,index) => (
             <SwiperSlide key={index}>
-              <div className={'max-w-72 rounded-3xl overflow-hidden bg-white'}>
+              <div className={'max-w-72 rounded-3xl overflow-hidden bg-zinc-900'}>
                 <div className={'h-56'}>
                   <img src={data.source} alt={data.alt}/>
                 </div>

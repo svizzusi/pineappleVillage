@@ -3,25 +3,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--beige);
-    padding-top: 30px;
 }
 
 .menuSectionHeading {
-    color: var(--orange);
-    padding: 20px;
+    color: var(--black);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 5.6rem;
 }
 
 .menuSectionSubHeading {
     color: var(--orange);
     text-align: center;
-    padding: 20px;
 }
 
 .menuSectionTextContainerParent {
     width: 100%;
-    background: var(--green);
-    border-top: 5px solid var(--darkGreen);
+    background-image: url('../../assets/images/thaiDish1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .menuSectionTextContainer {
@@ -31,24 +32,26 @@
     justify-content: center;
     margin: auto;
     gap: 20px;
-    padding: 20px;
+    padding: 0 20px;
     max-width: var(--maxWidth);
 }
 
 .menuSectionCard {
     display: flex;
     flex-direction: column;
-    border: 5px solid var(--darkGreen);
     border-radius: 8px;
     padding: 20px;
     width: 50%;
-    background: var(--white);
+    background: rgba(108, 100, 100, 0.55);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.9px);
+    -webkit-backdrop-filter: blur(9.9px);
     height: fit-content;
     margin: 100px 0;
 }   
 
 .menuSectionItemContainer {
-    border: 2px solid var(--darkGreen);
+    border: 1px solid var(--black);
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
@@ -58,6 +61,7 @@
     font-size: 1.2rem;
     text-align: center;
     padding-bottom: 15px;
+    color: var(--white);
 }
 
 .menuItemContainer {
@@ -68,12 +72,14 @@
 
 .menuItemContainer > span:first-child{
     width: 80%;
+    color: var(--white);
 }
 
 .menuItemContainer span{
     font-size: 1.8rem;
     font-weight: bold;
     padding-bottom: 5px;
+    color: var(--white);
 }
 
 .menuItemDescriptionContainer {
@@ -81,7 +87,8 @@
 }
 
 .menuItemDescriptionContainer p {
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    color: var(--white);
 }
 
 .menuItemALaCarte {

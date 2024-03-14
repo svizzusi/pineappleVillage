@@ -5,9 +5,14 @@
     justify-content: center;
 }
 .contactSectionHeader {
-    background: var(--beige);
     width: 100%;
+    max-width: 50%;
     text-align: center;
+    background: rgba(108, 100, 100, 0.55);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.9px);
+    -webkit-backdrop-filter: blur(9.9px);
+    border-radius: 8px;
 }
 
 .contactSectionHeader h1 {
@@ -18,13 +23,14 @@
 .contactSectionHeader p {
     font-size: 1.8rem;
     padding: 5px 0;
-    color: var(--darkGreen);
+    color: var(--white);
 }
 
 .contactSectionHeader p + p{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     margin-bottom: 20px;
 }
 
@@ -34,14 +40,16 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
-    background: var(--green);
+    background-image: url('../../assets/images/thaiDish1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     padding: 120px 0;
-    border-top: 5px solid var(--darkGreen);
+    border-top: 1px solid var(--white);
 }
 
 .contactHoursMapSectionline {
-    background: var(--orange);
     height: 5px;
 }
 
@@ -49,9 +57,12 @@
     width: 100%;
     max-width: 600px;
     height: 400px;
-    padding: 10px;
-    border: 2px solid var(--white);
+    padding: 20px;
     border-radius: 8px;
+    background: rgba(108, 100, 100, 0.55);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.9px);
+    -webkit-backdrop-filter: blur(9.9px);
 }
 
 .mapContainer iframe{
@@ -64,7 +75,12 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 20px;
     color: var(--white);
+    background: rgba(108, 100, 100, 0.55);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.9px);
+    -webkit-backdrop-filter: blur(9.9px);
 }
 
 .contactHours span{

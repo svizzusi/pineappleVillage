@@ -1,5 +1,6 @@
 .header {
-    background: var( --beige);
+    background: var( --black);
+    border-bottom: 1px solid var(--white);
   }
   
   .nav {
@@ -14,6 +15,7 @@
 
 .navLinks {
     display: flex;
+    color: var(--white);
     gap: 20px;
     cursor: pointer;
     list-style: none;
@@ -21,7 +23,6 @@
 }
 
 .navLink {
-    color: var(--black);
     text-align: center;
     z-index: 5;
 }
