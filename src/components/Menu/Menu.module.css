@@ -95,7 +95,6 @@
     font-size: 1.4rem;
 }
 
-
 @media screen and (max-width: 925px) {
     .menuSectionTextContainer {
         flex-direction: column;
