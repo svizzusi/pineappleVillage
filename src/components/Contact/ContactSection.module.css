@@ -86,3 +86,16 @@
 .contactHours span{
     font-size: 1.8rem;
 }
+
+@media screen and (max-width: 925px) {
+    .contactSectionHeader {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .mapContainer {
+        max-width: 100%;
+        margin: 20px;
+    }
+   
+}

@@ -21,6 +21,7 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.9px);
     -webkit-backdrop-filter: blur(9.9px);
+    border-radius: 8px;
 }
 
 .aboutSectionHeadingContainer {
@@ -75,6 +76,11 @@
 }
 
 @media screen and (max-width: 925px) {
+
+    .aboutSection {
+        margin: 20px;
+    }
+
     .aboutSectionText {
         width: 100%;
         max-width: 100%;
@@ -87,5 +93,10 @@
         width: 0;
         max-width: 0;
         padding: 0;
+    }
+
+    .aboutSectionSubHeading {
+        text-align: center;
+        margin: 20px 0;
     }
 }
